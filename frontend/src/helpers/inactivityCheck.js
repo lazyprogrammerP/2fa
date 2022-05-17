@@ -15,7 +15,7 @@ const inactivityCheck = () => {
 
   function resetTimer() {
     clearTimeout(time);
-    time = setTimeout(logout, 3000);
+    time = setTimeout(logout, 60000 * 30);
     // 1000 milliseconds = 1 second
   }
 };

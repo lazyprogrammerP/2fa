@@ -8,7 +8,9 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // window.on = () => {
     // alert("Loaded");
-    inactivityCheck();
+    if (localStorage.getItem("token")) {
+      inactivityCheck();
+    }
     // };
   }, []);
 
